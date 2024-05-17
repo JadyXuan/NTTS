@@ -21,3 +21,21 @@ Traceback (most recent call last):
     Model.inference(img)
 KeyboardInterrupt
 ```
+
+### 又有时间睡觉了
+明天就要开发布会了？代码还没有实现完？今晚又要通宵了？拒绝加班，从你我做起！在你的项目中引入这个附属包吧，它会把traceback信息的最后一行替换成time.sleep。经过高端发布会现场验证，保证确定性时延，在不耽误睡觉的情况下，完美复刻大厂技术！
+
+```python
+import NTTS.tts
+```
+
+然后你的代码在ctrl+C时就会给出漂亮的输出
+
+```
+Traceback (most recent call last):
+  File "/workspaces/main.py", line 11, in <module>
+    write()
+  File "/root/anaconda3/lib/python3.9/site-packages/mindx/__init__.py", line 57, in write
+    time.sleep(6)
+KeyboardInterrupt
+```
