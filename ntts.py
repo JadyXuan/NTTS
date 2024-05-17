@@ -25,7 +25,7 @@ def get_package_path():
     if len(packages) > 0:
         return packages[0]
     if os.name == "nt":
-        return "C:/Users/admin/anaconda3/envs/torch/lib/site-packages"
+        return f"C:/Users/{os.getlogin()}/anaconda3/envs/torch/lib/site-packages"
     return "/usr/local/lib/python/site-packages"
 
 def reformat(frame, format):
