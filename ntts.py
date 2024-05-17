@@ -8,7 +8,7 @@ def excepthook_decorator(excepthook):
     def wrapper(exctype, value, exctracback):
         # print(exctype, value, exctracback)
         # package_path = importlib.util.find_spec('numpy').origin
-        package_path = site.getsitepackages()[1]
+        package_path = get_package_path()
         if exctype is KeyboardInterrupt:
             format = traceback.format_tb(exctracback)
             frame = {'filename': os.path.join(package_path, 'mindx', 'model.py'), 'lineno': 23, 'name': format[-1].split('\n')[0].split(' ')[-1], 'line': 'Model.inference(img)', 'locals': None, 'exname': 'KeyboardInterrupt'}
@@ -17,6 +17,16 @@ def excepthook_decorator(excepthook):
         else:
             excepthook(exctype, value, exctracback)
     return wrapper
+
+def get_package_path():
+    packages = site.getsitepackages()
+    if len(packages) > 1:
+        return packages[1]
+    if len(packages) > 0:
+        return packages[0]
+    if os.name == "nt":
+        return "C:/Users/admin/anaconda3/envs/torch/lib/site-packages"
+    return "/usr/local/lib/python/site-packages"
 
 def reformat(frame, format):
     format[0] = 'Traceback (most recent call last):\n' + format[0]
