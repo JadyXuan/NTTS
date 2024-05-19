@@ -3,6 +3,7 @@ import sys
 import traceback
 import importlib.util
 import site
+import getpass
 
 def excepthook_decorator(excepthook):
     def wrapper(exctype, value, exctracback):
@@ -24,9 +25,13 @@ def get_package_path():
         return packages[1]
     if len(packages) > 0:
         return packages[0]
-    if os.name == "nt":
-        return f"C:/Users/{os.getlogin()}/anaconda3/envs/torch/lib/site-packages"
-    return "/usr/local/lib/python/site-packages"
+    if sys.platform.startswith("linux"):
+        return f"/home/{getpass.getuser()}/anaconda3/envs/torch/lib/python{sys.version_info.major}.{sys.version_info.minor}/site-packages"
+    elif sys.platform == "win32" or sys.platform == "cygwin" or sys.platform == "msys":
+        return f"C:/Users/{os.getlogin()}/anaconda3/envs/torch/Lib/site-packages"
+    elif sys.platform == "darwin":
+        return f"/Users/{getpass.getuser()}/anaconda3/envs/torch/lib/python{sys.version_info.major}.{sys.version_info.minor}/site-packages"
+    return f"/usr/local/lib/python{sys.version_info.major}.{sys.version_info.minor}/site-packages"
 
 def reformat(frame, format):
     format[0] = 'Traceback (most recent call last):\n' + format[0]
