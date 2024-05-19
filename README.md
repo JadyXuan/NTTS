@@ -9,7 +9,7 @@
 或者，如果你想使用最新的版本, Clone本项目到你的工程目录下，在项目根目录下运行：
 
 ```
-pip install -e
+pip install -e .
 ```
 
 然后你的代码在ctrl+C时就会给出漂亮的输出
@@ -57,3 +57,28 @@ KeyboardInterrupt
 
 python setup.py bdist_wheel
 twine upload dist/*
+
+## 感谢支持
+[![Stargazers repo roster for @JadyXuan/NTTS](https://reporoster.com/stars/JadyXuan/NTTS)](https://github.com/JadyXuan/NTTS/stargazers)
+
+## 感谢贡献者：
+<!-- readme: collaborators,contributors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/JadyXuan">
+            <img src="https://avatars.githubusercontent.com/u/35390572?v=4" width="100;" alt="JadyXuan"/>
+            <br />
+            <sub><b>JadyXuan</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/wufei-png">
+            <img src="https://avatars.githubusercontent.com/u/63766429?v=4" width="100;" alt="wufei-png"/>
+            <br />
+            <sub><b>Wu Fei</b></sub>
+        </a>
+    </td>
+</tr>
+</table>
+<!-- readme: collaborators,contributors -end -->
