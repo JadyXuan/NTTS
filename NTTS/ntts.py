@@ -20,11 +20,12 @@ def excepthook_decorator(excepthook):
     return wrapper
 
 def get_package_path():
-    packages = site.getsitepackages()
-    if len(packages) > 1:
-        return packages[1]
-    if len(packages) > 0:
-        return packages[0]
+    if hasattr(site, 'getsitepackages'):
+        packages = site.getsitepackages()
+        if len(packages) > 1:
+            return packages[1]
+        if len(packages) > 0:
+            return packages[0]
     if sys.platform.startswith("linux"):
         return f"/home/{getpass.getuser()}/anaconda3/envs/torch/lib/python{sys.version_info.major}.{sys.version_info.minor}/site-packages"
     elif sys.platform == "win32" or sys.platform == "cygwin" or sys.platform == "msys":
