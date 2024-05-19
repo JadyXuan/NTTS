@@ -64,42 +64,44 @@ twine upload dist/*
 ## 感谢贡献者：
 <!-- readme: collaborators,contributors -start -->
 <table>
-<tr>
-    <td align="center">
-        <a href="https://github.com/JadyXuan">
-            <img src="https://avatars.githubusercontent.com/u/35390572?v=4" width="100;" alt="JadyXuan"/>
-            <br />
-            <sub><b>JadyXuan</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/wufei-png">
-            <img src="https://avatars.githubusercontent.com/u/63766429?v=4" width="100;" alt="wufei-png"/>
-            <br />
-            <sub><b>Wu Fei</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/deanyxu">
-            <img src="https://avatars.githubusercontent.com/u/12771139?v=4" width="100;" alt="deanyxu"/>
-            <br />
-            <sub><b>DX</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/qhy040404">
-            <img src="https://avatars.githubusercontent.com/u/45379733?v=4" width="100;" alt="qhy040404"/>
-            <br />
-            <sub><b>qhy040404</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/znsoooo">
-            <img src="https://avatars.githubusercontent.com/u/34830785?v=4" width="100;" alt="znsoooo"/>
-            <br />
-            <sub><b>Shixian Li</b></sub>
-        </a>
-    </td>
-</tr>
+	<tbody>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/JadyXuan">
+                    <img src="https://avatars.githubusercontent.com/u/35390572?v=4" width="100;" alt="JadyXuan"/>
+                    <br />
+                    <sub><b>JadyXuan</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/wufei-png">
+                    <img src="https://avatars.githubusercontent.com/u/63766429?v=4" width="100;" alt="wufei-png"/>
+                    <br />
+                    <sub><b>Wu Fei</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/deanyxu">
+                    <img src="https://avatars.githubusercontent.com/u/12771139?v=4" width="100;" alt="deanyxu"/>
+                    <br />
+                    <sub><b>DX</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/znsoooo">
+                    <img src="https://avatars.githubusercontent.com/u/34830785?v=4" width="100;" alt="znsoooo"/>
+                    <br />
+                    <sub><b>Shixian Li</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/qhy040404">
+                    <img src="https://avatars.githubusercontent.com/u/45379733?v=4" width="100;" alt="qhy040404"/>
+                    <br />
+                    <sub><b>qhy040404</b></sub>
+                </a>
+            </td>
+		</tr>
+	<tbody>
 </table>
 <!-- readme: collaborators,contributors -end -->
