@@ -79,6 +79,27 @@ twine upload dist/*
             <sub><b>Wu Fei</b></sub>
         </a>
     </td>
+    <td align="center">
+        <a href="https://github.com/deanyxu">
+            <img src="https://avatars.githubusercontent.com/u/12771139?v=4" width="100;" alt="deanyxu"/>
+            <br />
+            <sub><b>DX</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/qhy040404">
+            <img src="https://avatars.githubusercontent.com/u/45379733?v=4" width="100;" alt="qhy040404"/>
+            <br />
+            <sub><b>qhy040404</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/znsoooo">
+            <img src="https://avatars.githubusercontent.com/u/34830785?v=4" width="100;" alt="znsoooo"/>
+            <br />
+            <sub><b>Shixian Li</b></sub>
+        </a>
+    </td>
 </tr>
 </table>
 <!-- readme: collaborators,contributors -end -->
