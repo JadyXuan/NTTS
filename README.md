@@ -54,10 +54,10 @@ KeyboardInterrupt
 ## Project Development
 
 ### build and upload pip package:
-
+```
 python setup.py bdist_wheel
 twine upload dist/*
-
+```
 ## 感谢支持
 [![Stargazers repo roster for @JadyXuan/NTTS](https://reporoster.com/stars/JadyXuan/NTTS)](https://github.com/JadyXuan/NTTS/stargazers)
 
