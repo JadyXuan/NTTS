@@ -1,17 +1,14 @@
 import os
 import sys
 import traceback
-import importlib.util
 import site
 
-def excepthook_decorator(excepthook):
+def excepthook_decorator(excepthook, filename, lineno, line):
     def wrapper(exctype, value, exctracback):
         # print(exctype, value, exctracback)
-        # package_path = importlib.util.find_spec('numpy').origin
-        package_path = get_package_path()
         if exctype is KeyboardInterrupt:
             format = traceback.format_tb(exctracback)
-            frame = {'filename': os.path.join(package_path, 'mindx', 'model.py'), 'lineno': 23, 'name': format[-1].split('\n')[0].split(' ')[-1], 'line': 'Model.inference(img)', 'locals': None, 'exname': 'KeyboardInterrupt'}
+            frame = {'filename': filename, 'lineno': lineno, 'name': format[-1].split('\n')[0].split(' ')[-1], 'line': line, 'locals': None, 'exname': 'KeyboardInterrupt'}
             msg = ''.join(reformat(frame, format))
             print(msg, file=sys.stderr)
         else:
