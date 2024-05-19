@@ -7,8 +7,11 @@ jobs:
     contrib-readme-job:
         runs-on: ubuntu-latest
         name: A job to automate contrib in readme
+        permissions:
+          contents: write
+          pull-requests: write
         steps:
             - name: Contribute List
-              uses: akhilmhdh/contributors-readme-action@v2.3.6
+              uses: akhilmhdh/contributors-readme-action@v2.3.10
               env:
-                  GITHUB_TOKEN: ${{ secrets.CONTRIBUTORS_TOKEN }}
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
