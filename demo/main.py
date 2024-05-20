@@ -1,4 +1,5 @@
 import rag
+import NTTS
 from PIL import Image
 
 def read_image():
