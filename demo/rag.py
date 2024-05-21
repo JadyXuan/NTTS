@@ -5,8 +5,10 @@ import random
 def query(q, image_only, file_type=None):
     try:
         time.sleep(1)
-        print_now(f"好的，我将为你{q}...")
-        print_now("正在生成图片...")
+        now = f"好的，我将为你{q}..."
+        print_now(f"{now}")
+        now_2 = f"正在生成图片..."
+        print_now(f"{now_2}")
         img = Image.open('./home/hide/output.jpeg')
         time.sleep(6)
         print_now("图片生成完成！")
