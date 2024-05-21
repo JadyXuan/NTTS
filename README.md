@@ -29,7 +29,9 @@ KeyboardInterrupt
 
 如果你想实现自动导入而无需 `import NTTS`，你需要将项目根目录的ntts.pth文件拷贝到site-packages路径下。如`/home/username/anaconda3/envs/conda_env_name/lib/python3.10/site-packages/`
 
+#### NTTS 演示Demo
 
+Demo位于 ./demo , 此Demo使用某500强企业同款语言&图片大模型，下载后运行 `main.py` 即可
 
 # Time to Sleep
 
